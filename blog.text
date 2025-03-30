@@ -1,0 +1,17 @@
+1 . Union Types (|): These allow a variable to hold multiple types, offering flexibility. Example:
+
+let value: string | number;
+value = "Hello"; 
+value = 42;       
+
+2. Intersection Types (&): These combine multiple types into one, ensuring that an object adheres to multiple structures. Example:
+
+type User = { name: string };
+type Admin = { admin: boolean };
+type SuperUser = User & Admin;
+
+let person: SuperUser = { name: "Alice", admin: true }
+
+Union types provide flexibility, allowing variables to hold values of different types.
+
+Intersection types ensure that an object has properties of all the types it intersects, ensuring a more specific structure.
